@@ -7,7 +7,7 @@ can load and display an expandable tree menu.
 1. Write your code as if it will go to production.  Do not hack together a solution.
 2. You may not use any additional frameworks.
 2. Use proper Typescript types, do not use "any", implied any or "unknown".
-2. Your implementation must be able to support a tree of infinite depth.  Don't assume it only needs to work with examples.
+2. Your implementation must be able to support a tree of infinite depth.  Don't assume it only needs to work with the examples.
 3. Nodes with children are initially displayed collapsed.
 4. Clicking a node with children toggles expand/collapse.
 2. Collapsed nodes display a "+" next the label.
@@ -15,6 +15,7 @@ can load and display an expandable tree menu.
 4. Nodes that contain a url display a "#" next to th label.  The "#" should not be clickable. 
 4. Nodes that contain a url open the url in a separate tab when clicked. The same tab must always be used.  It should not create a new tab on every click.
 5. Child nodes are consistently indented from their parents.
+6. The implementation must support displaying multiple menus on the screen at once.
 
 ## Assumptions
 1. All nodes will have a label.
