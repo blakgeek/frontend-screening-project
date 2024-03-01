@@ -1,7 +1,9 @@
 import {MenuItem} from "../types";
 
-export const results: Record<string, MenuItem[]> = {
-    easy: [
+export type ResultKey = 'small' | 'medium' | 'large';
+
+export const results: Record<ResultKey, MenuItem[]> = {
+    small: [
         {
             label: "main 1",
             children: [
@@ -39,7 +41,7 @@ export const results: Record<string, MenuItem[]> = {
         { label: "Byzzer", url: "https://www.byzzer.com" },
         { label: "Google", url: "https://google.com" }
     ],
-    big: [
+    large: [
         {
             label: "main 1",
             children: [
