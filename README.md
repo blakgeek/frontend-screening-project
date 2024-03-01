@@ -15,7 +15,7 @@ can load and display an expandable tree menu.
 4. Nodes that contain a url display a "#" next to th label.  The "#" should not be clickable. 
 4. Nodes that contain a url open the url in a separate tab when clicked. The same tab must always be used.  It should not create a new tab on every click.
 5. Child nodes are consistently indented from their parents.
-6. Multiple menus can displayed at once, each displaying different sets of menu items.
+6. Multiple menus can be displayed at once, each displaying a different set of menu items.
 
 ## Assumptions
 1. All nodes will have a label.
