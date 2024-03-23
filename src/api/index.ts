@@ -1,7 +1,7 @@
 import { MenuItem } from "../types";
-import {ResultKey, results} from "./results";
+import { ResultKey, results } from "./results";
 
-export function loadMenuItems(id: ResultKey = 'small'): Promise<MenuItem[]> {
+export function loadMenuItems(id: ResultKey = "large"): Promise<MenuItem[]> {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(results[id]);
