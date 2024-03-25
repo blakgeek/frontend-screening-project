@@ -8,7 +8,11 @@ export default function App() {
   const [data, setData] = useState<MenuItem[]>([]);
   useEffect(() => {
     (async () => {
-      await loadMenuItems('medium').then((res) => setData(res));
+      try {
+        await loadMenuItems('medium').then((res) => setData(res));
+      } catch (err) {
+        console.log('Error on fetching data : ', err);
+      }
     })();
   }, [loadMenuItems, setData]);
   return data && data.length ? (
